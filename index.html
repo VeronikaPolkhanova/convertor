@@ -7,21 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://stevenlevithan.com/assets/misc/date.format.js"></script>
 </head>
 
 <body>
     <h2>Конвертор валют</h2>
-    <div>
-        <form onchange="res(event)">
+
+        <form onchange="onInput(event)">
             <div class="input">
-                <input type="number" id="inputValue" placeholder="0" onchange="res(event)" />
-                <select id="from_curency_select" onchange='onFromSelect()'>
+                <input type="number" id="input_value" placeholder="0" onchange="onInput(event)" />
+                <select id="from_currency_select" onchange='onCurrencySelect()'>
                     <option value="BYN">BYN</option>
                     <option value="RUB">RUB</option>
                     <option value="EUR">EUR</option>
                     <option value="USD">USD</option>
                     <option value="CNY">CNY</option>
-                </select>   
+                </select>
             </div>
             <ul>
                 <li>
@@ -46,7 +47,32 @@
                 </li>
             </ul>
         </form>
-    </div>
+
+        <h2>Курс валют</h2>
+        <input type="date" id="data_picker" onchange='onDataSelect()'/>  
+        <ul>
+            <li>
+                <span>BYN: </span>
+                <span id="currency_BYN">0.00</span>
+            </li>
+            <li>
+                <span>RUB: </span>
+                <span id="currency_RUB">0.00</span>
+            </li>
+            <li>
+                <span>EUR: </span>
+                <span id="currency_EUR">0.00</span>
+            </li>
+            <li>
+                <span>USD: </span>
+                <span id="currency_USD">0.00</span>
+            </li>
+            <li>
+                <span>CNY: </span>
+                <span id="currency_CNY">0.00</span>
+            </li>
+        </ul> 
+ 
     <script src="./script.js"></script>
 </body>
 
