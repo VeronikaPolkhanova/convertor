@@ -13,66 +13,66 @@
 <body>
     <h2>Конвертор валют</h2>
 
-        <form onchange="onInput(event)">
-            <div class="input">
-                <input type="number" id="input_value" placeholder="0" onchange="onInput(event)" />
-                <select id="from_currency_select" onchange='onCurrencySelect()'>
-                    <option value="BYN">BYN</option>
-                    <option value="RUB">RUB</option>
-                    <option value="EUR">EUR</option>
-                    <option value="USD">USD</option>
-                    <option value="CNY">CNY</option>
-                </select>
-            </div>
-            <ul>
-                <li>
-                    <span>BYN: </span>
-                    <span id="output_BYN">0.00</span>
-                </li>
-                <li>
-                    <span>RUB: </span>
-                    <span id="output_RUB">0.00</span>
-                </li>
-                <li>
-                    <span>EUR: </span>
-                    <span id="output_EUR">0.00</span>
-                </li>
-                <li>
-                    <span>USD: </span>
-                    <span id="output_USD">0.00</span>
-                </li>
-                <li>
-                    <span>CNY: </span>
-                    <span id="output_CNY">0.00</span>
-                </li>
-            </ul>
-        </form>
-
-        <h2>Курс валют</h2>
-        <input type="date" id="data_picker" onchange='onDataSelect()'/>  
-        <ul>
+    <form onchange="onInput(event)">
+        <div class="input">
+            <input type="number" id="input_value" placeholder="0" onchange="onInput(event)" />
+            <select id="from_currency_select" onchange='onCurrencySelect()'>
+                <option value="BYN">BYN</option>
+                <option value="RUB">RUB</option>
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="CNY">CNY</option>
+            </select>
+        </div>
+        <ul id="label_list">
             <li>
                 <span>BYN: </span>
-                <span id="currency_BYN">0.00</span>
+                <span id="output_BYN">0.00</span>
             </li>
             <li>
                 <span>RUB: </span>
-                <span id="currency_RUB">0.00</span>
+                <span id="output_RUB">0.00</span>
             </li>
             <li>
                 <span>EUR: </span>
-                <span id="currency_EUR">0.00</span>
+                <span id="output_EUR">0.00</span>
             </li>
             <li>
                 <span>USD: </span>
-                <span id="currency_USD">0.00</span>
+                <span id="output_USD">0.00</span>
             </li>
             <li>
                 <span>CNY: </span>
-                <span id="currency_CNY">0.00</span>
+                <span id="output_CNY">0.00</span>
             </li>
-        </ul> 
- 
+        </ul>
+    </form>
+
+    <h2>Курс валют</h2>
+    <input type="date" id="data_picker" onchange='onDataSelect()' />
+    <ul>
+        <li>
+            <span>BYN: </span>
+            <span id="currency_BYN">0.00</span>
+        </li>
+        <li>
+            <span>RUB: </span>
+            <span id="currency_RUB">0.00</span>
+        </li>
+        <li>
+            <span>EUR: </span>
+            <span id="currency_EUR">0.00</span>
+        </li>
+        <li>
+            <span>USD: </span>
+            <span id="currency_USD">0.00</span>
+        </li>
+        <li>
+            <span>CNY: </span>
+            <span id="currency_CNY">0.00</span>
+        </li>
+    </ul>
+
     <script src="./script.js"></script>
 </body>
 

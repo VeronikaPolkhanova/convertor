@@ -32,7 +32,7 @@ function CheckSelect(select) {
 function CheckValue(input_value) {
     if (input_value < 0) {
         alert("Количество валюты не может быть меньше нуля!");
-        document.getElementById('inputValue').value = Math.abs(input_value);
+        document.getElementById('input_value').value = Math.abs(input_value);
         return Math.abs(input_value);
     }
     else return input_value
@@ -78,7 +78,7 @@ function onDataSelect() {
         document.getElementById('currency_CNY').innerHTML = CNY;
     }
     else if (today > new_date) {
-        document.getElementById('currency_BYN').innerHTML = Rand(BYN);
+        document.getElementById('currency_BYN').innerHTML = BYN;
         document.getElementById('currency_RUB').innerHTML = Rand(RUB);
         document.getElementById('currency_EUR').innerHTML = Rand(EUR);
         document.getElementById('currency_USD').innerHTML = Rand(USD);
